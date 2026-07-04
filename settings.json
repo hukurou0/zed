@@ -1,0 +1,79 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "cli_default_open_behavior": "new_window",
+  "icon_theme": "Catppuccin Mocha",
+  "tabs": {
+    "close_position": "right",
+  },
+  "diff_view_style": "split",
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry",
+    },
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "ui_font_size": 12,
+  "buffer_font_size": 12,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Mirage",
+    "dark": "VSCode Dark Modern",
+  },
+  "vim_mode": false,
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": false,
+    "show_parameter_hints": false,
+    "show_other_hints": true,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50,
+  },
+  "project_panel": {
+    "dock": "left",
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "!solargraph"],
+    },
+  },
+  "scrollbar": {
+    "show": "never",
+  },
+  "status_bar": {
+    "experimental.show": true,
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "title_bar": {
+    "show_sign_in": false,
+    "show_user_menu": false,
+  },
+  "disable_ai": true,
+  "toolbar": {
+    "quick_actions": false,
+    "selections_menu": false,
+  },
+  "file_finder": {
+    "modal_max_width": "large",
+  },
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false,
+  },
+  "current_line_highlight": "all",
+  "experimental.theme_overrides": {
+    "tab_bar.background": "#1a1a1a",
+    "tab.active_background": "#3a3f58",
+    "tab.inactive_background": "#1a1a1a",
+  },
+}
