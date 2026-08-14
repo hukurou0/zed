@@ -9,19 +9,20 @@
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
-    },
-  },
-  {
-    "context": "Editor && vim_mode == insert",
-    "bindings": {
-      // "j k": "vim::NormalBefore"
-    },
+      "ctrl-alt-i": ["task::Spawn", { "task_name": "worktree install" }],
+      "ctrl-alt-d": ["task::Spawn", { "task_name": "dev all (middleware + server + audio_ai + storybook)" }]
+    }
   },
   {
     "bindings": {
       "ctrl-1": "project_panel::ToggleFocus",
       "ctrl-2": "git_panel::ToggleFocus",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-t": "workspace::NewTerminal",
     },
   },
 ]

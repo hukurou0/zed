@@ -7,6 +7,18 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/.claude/worktrees"
+  ],
   "cli_default_open_behavior": "new_window",
   "icon_theme": "Catppuccin Mocha",
   "tabs": {
@@ -39,6 +51,7 @@
   },
   "project_panel": {
     "dock": "left",
+    "default_width": 400,
   },
   "languages": {
     "Ruby": {
@@ -49,9 +62,14 @@
     "show": "never",
   },
   "status_bar": {
-    "experimental.show": true,
+    "experimental.show": false,
   },
   "git_panel": {
+    "show_count_badge": false,
+    "diff_stats": true,
+    "tree_view": true,
+    "group_by": "staging",
+    "button": true,
     "dock": "left",
   },
   "title_bar": {
@@ -76,4 +94,11 @@
     "tab.active_background": "#3a3f58",
     "tab.inactive_background": "#1a1a1a",
   },
+  "sticky_scroll": {
+      "enabled": true
+  },
+  "max_tabs": 8,
+  "preview_tabs": {
+    "enabled": true,
+  }
 }
