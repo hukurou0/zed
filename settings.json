@@ -101,5 +101,8 @@
   "max_tabs": 8,
   "preview_tabs": {
     "enabled": true,
-  }
+  },
+  "cursor_shape":"block",
+  "cursor_blink": false,
+  "selection_highlight": true
 }
